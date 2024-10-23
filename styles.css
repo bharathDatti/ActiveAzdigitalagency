@@ -1,0 +1,279 @@
+/* General Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+  
+body {
+    font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4 {
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.nav-link {
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Hero/Banner Section */
+.hero {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: #fff;
+    padding: 5rem 0;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+}
+
+.hero .btn-lg {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+}
+
+/* Services Section */
+.services {
+    background-color: #f9f9f9;
+    padding: 3rem 0;
+}
+
+.services h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    color: #007bff;
+}
+
+.card-text {
+    color: #666;
+}
+
+/* About Us Section */
+.about {
+    background-color: #fff;
+    padding: 3rem 0;
+}
+
+.about h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.about p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.about h3 {
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+.about ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about ul li {
+    padding-left: 20px;
+    position: relative;
+    color: #666;
+}
+
+.about ul li:before {
+    content: "✔";
+    color: #007bff;
+    position: absolute;
+    left: 0;
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 3rem 0;
+}
+
+.portfolio h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.portfolio .card {
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio .card-title {
+    font-size: 1.25rem;
+    color: #007bff;
+}
+
+.portfolio .card-text {
+    color: #666;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #f9f9f9;
+    padding: 3rem 0;
+}
+
+.testimonials h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.testimonials p {
+    font-style: italic;
+    color: #666;
+}
+
+/* Blog Section */
+.blog {
+    padding: 3rem 0;
+}
+
+.blog h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.blog .card {
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog .card-title {
+    font-size: 1.25rem;
+    color: #007bff;
+}
+
+.blog .card-text {
+    color: #666;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #fff;
+    padding: 3rem 0;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.contact form .form-control {
+    border-radius: 0;
+}
+
+.contact form button {
+    background-color: #007bff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+}
+
+.contact form button:hover {
+    background-color: #0056b3;
+}
+
+.contact h3 {
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+.contact p {
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .services .card-title,
+    .portfolio .card-title,
+    .blog .card-title {
+        font-size: 1rem;
+    }
+
+    .about ul li {
+        padding-left: 15px;
+    }
+}
